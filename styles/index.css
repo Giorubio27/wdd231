@@ -1,0 +1,191 @@
+main {
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about {
+    background-color: aqua;
+
+}
+
+.griddy {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+section {
+    margin: 1rem;
+
+}
+
+picture {
+    display: grid;
+    place-content: center;
+    background-color: aqua;
+    padding-bottom: 2rem;
+
+}
+
+picture img {
+    width: 400px;
+    margin-top: 1.5rem;
+
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 30px;
+    font-size: xx-large;
+}
+
+nav {
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 2px;
+    box-shadow: 0 0 20px grey;
+}
+
+li a:hover,
+li a:active {
+    color: white;
+
+}
+
+.showtime li {
+    display: block;
+}
+
+#menu.showtime::before {
+    content: "X";
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: rgba(0, 0, 0, 0.021);
+    border: 1px solid black;
+    color: black;
+
+}
+
+#menu::before {
+    content: "≡";
+
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: aqua;
+}
+
+.navy ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+}
+
+nav {
+    display: flex;
+}
+
+nav li a {
+    display: flex;
+}
+
+nav li {
+    display: none;
+}
+
+.navy a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.navy a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.showtime li {
+    display: block;
+}
+
+.showtime ul {
+    display: block;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    background-color: black;
+    padding: 20px;
+    color: aqua;
+}
+
+.about {
+    background-color:
+}
+
+.about h2 {
+    padding: 1rem;
+    background-color: black;
+    color: aqua;
+}
+
+h2 {
+    border: 1px solid black;
+}
+
+
+
+footer img {
+    width: 75px;
+}
+
+.ducks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
