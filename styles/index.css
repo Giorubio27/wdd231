@@ -61,10 +61,18 @@ picture img {
 .flex {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     padding: 30px;
     font-size: xx-large;
 }
+.flex img {
+    width: 100px;
+    
+}
+
+
+
 
 nav {
     background-color: aqua;
@@ -106,8 +114,8 @@ li a:active {
 
 #menu {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 4rem;
+    right: 2rem;
     background-color: aqua;
 }
 
@@ -198,5 +206,10 @@ footer img {
 }
 .course section {
     display: flex;
+    flex-flow: row wrap;
+
     
+}
+.course li a {
+    display: contents;
 }
