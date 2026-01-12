@@ -116,6 +116,19 @@ function createCourseCard(filteredCourses) {
         let card = document.createElement('section');
         let subject = document.createElement('h3');
         let number = document.createElement('p');
+        let credits = document.createElement('p');
+
+        subject.textContent = `${course.subject}`;
+        number.innerHTML = `${course.number}`;
+        credits.innerHTML = `Credits = ${course.credits}`;
+
+        card.appendChild(subject);
+        card.appendChild(number);
+        card.appendChild(credits);
+
+
+        document.querySelector('.course').appendChild(card);
+
 
     });
 }

@@ -164,9 +164,7 @@ h3 {
     color: aqua;
 }
 
-.about {
-    background-color:
-}
+
 
 .about h2 {
     padding: 1rem;
@@ -186,4 +184,19 @@ footer img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/*my course card CSS  */
+
+.course {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    color: black;
+    
+
+}
+.course section {
+    display: flex;
+    
 }
