@@ -1,12 +1,17 @@
 document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 const hambutton = document.querySelector('#menu');
-const navigation = document.querySelector(".hammy")
+const navigation = document.querySelector(".hammy");
+const coursebutton = document.querySelector('.course');
 
 hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('showtime');
     navigation.classList.toggle('showtime');
 });
+
+coursebutton.addEventListener('click', () => {
+    course.button.classList.toggle('primetime');
+})
 
 const courses = [
     {
@@ -89,12 +94,13 @@ const courses = [
 ]
 
 createCourseCard(courses);
+createAddCourses(courses);
 
 const allLink = document.querySelector('#all');
 
 allLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
-    createCourseCard(courses.filter(course => course.subject.includes("")))
+    createCourseCard(courses.filter(course => course.subject.includes("")));
 });
 
 const cseLink = document.querySelector('#cse');
@@ -116,19 +122,29 @@ function createCourseCard(filteredCourses) {
         let card = document.createElement('section');
         let subject = document.createElement('h3');
         let number = document.createElement('p');
-        let credits = document.createElement('p');
 
-        subject.textContent = `${course.subject}`;
+
+        subject.innerHTML = `${course.subject}`;
         number.innerHTML = `${course.number}`;
-        credits.innerHTML = `Credits = ${course.credits}`;
+
 
         card.appendChild(subject);
         card.appendChild(number);
-        card.appendChild(credits);
+
 
 
         document.querySelector('.course').appendChild(card);
 
 
+
+
     });
+
+
 }
+
+
+
+
+
+
