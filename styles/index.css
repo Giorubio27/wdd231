@@ -27,6 +27,9 @@ h2 {
     font-size: x-large;
     margin-top: 0;
     margin-bottom: 0;
+    border: 1px solid black;
+    color: aqua;
+    background-color: black;
 }
 
 
@@ -35,6 +38,7 @@ nav {
     border: 1px solid black;
     margin: 2px;
     box-shadow: 0 0 20px grey;
+    display: flex;
 }
 
 li a:hover,
@@ -57,9 +61,12 @@ li a:active {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: rgba(0, 0, 0, 0.021);
     border: 1px solid black;
     color: black;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    background-color: aqua;
 
 }
 
@@ -68,12 +75,7 @@ li a:active {
 
 }
 
-#menu {
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    background-color: aqua;
-}
+
 
 .navy ul {
     list-style: none;
@@ -82,9 +84,7 @@ li a:active {
 
 }
 
-nav {
-    display: flex;
-}
+
 
 nav li a {
     display: flex;
@@ -109,19 +109,11 @@ navigation a:active {
     background-color: black;
 }
 
-.showtime li {
-    display: block;
-}
+
 
 .showtime ul {
     display: block;
 }
-
-section {
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 
@@ -132,12 +124,7 @@ section {
     color: aqua;
 }
 
-h2 {
-    border: 1px solid black;
-    color: aqua;
-    background-color: black;
 
-}
 /* end of heading */
 
 
@@ -155,6 +142,8 @@ h2 {
 
 section {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 
 }
 
