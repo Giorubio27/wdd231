@@ -10,7 +10,7 @@ hambutton.addEventListener('click', () => {
 });
 
 coursebutton.addEventListener('click', () => {
-    course.button.classList.toggle('primetime');
+    coursebutton.classList.toggle('primetime');
 })
 
 const courses = [
@@ -94,13 +94,14 @@ const courses = [
 ]
 
 createCourseCard(courses);
-createAddCourses(courses);
+
 
 const allLink = document.querySelector('#all');
 
 allLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
     createCourseCard(courses.filter(course => course.subject.includes("")));
+    addCredits(filteredCourses);
 });
 
 const cseLink = document.querySelector('#cse');
@@ -108,6 +109,7 @@ const cseLink = document.querySelector('#cse');
 cseLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
     createCourseCard(courses.filter(course => course.subject.includes("CSE")))
+    addCredits(filteredCourses)
 });
 
 const wddLink = document.querySelector('#wdd');
@@ -115,6 +117,7 @@ const wddLink = document.querySelector('#wdd');
 wddLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
     createCourseCard(courses.filter(course => course.subject.includes("WDD")))
+    addCredits(filteredCourses);
 });
 
 function createCourseCard(filteredCourses) {
@@ -122,26 +125,31 @@ function createCourseCard(filteredCourses) {
         let card = document.createElement('section');
         let subject = document.createElement('h3');
         let number = document.createElement('p');
+        let credits = document.createElement('p');
 
 
+        credits.innerHTML = `${course.credits}`;
         subject.innerHTML = `${course.subject}`;
         number.innerHTML = `${course.number}`;
 
 
         card.appendChild(subject);
         card.appendChild(number);
+        card.appendChild(credits);
 
 
 
         document.querySelector('.course').appendChild(card);
 
-
-
-
     });
-
-
 }
+
+function addCredits(filteredCourses) {
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course, 0);
+    console.log("Total Credits:", totalCredits);
+    return totalCredits;
+}
+
 
 
 
