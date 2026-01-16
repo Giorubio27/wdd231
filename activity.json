@@ -1,0 +1,26 @@
+
+{
+"familyname": "Rubio",
+"date_moved_in": "06/06/1995",
+"family_number": 4,
+"bishopvisit": false,
+"individual info": [
+    {
+        "name": "Giovanni",
+        "gender": "male",
+        "birthdate": "06/06/1995"
+    },
+{
+        "name": "Gabriela",
+        "gender": "female",
+        "birthdate": "04/08/1994"
+    },
+{
+        "name": "Davi",
+        "gender": "male",
+        "birthdate": "01/18/2018"
+    }
+]
+
+} 
+
