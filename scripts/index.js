@@ -2,16 +2,14 @@ document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 const hambutton = document.querySelector('#menu');
 const navigation = document.querySelector(".hammy");
-const coursebutton = document.querySelector('.course');
+
 
 hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('showtime');
     navigation.classList.toggle('showtime');
 });
 
-coursebutton.addEventListener('click', () => {
-    coursebutton.classList.toggle('primetime');
-})
+
 
 const courses = [
     {
@@ -101,20 +99,22 @@ addCourseCard(courses);
 const allLink = document.querySelector('#all');
 
 allLink.addEventListener('click', () => {
-    document.querySelector('.course').innerHTML = '';
+    document.querySelector('.cards-container').innerHTML = '';
     const allCourses = courses.filter(course => course.subject.includes(""));
     createCourseCard(allCourses);
     addCourseCard(allCourses);
+
 
 });
 
 const cseLink = document.querySelector('#cse');
 
 cseLink.addEventListener('click', () => {
-    document.querySelector('.course').innerHTML = '';
+    document.querySelector('.cards-container').innerHTML = '';
     const cseCourses = courses.filter(course => course.subject.includes("CSE"));
     createCourseCard(cseCourses);
     addCourseCard(cseCourses);
+
 
 
 });
@@ -122,10 +122,11 @@ cseLink.addEventListener('click', () => {
 const wddLink = document.querySelector('#wdd');
 
 wddLink.addEventListener('click', () => {
-    document.querySelector('.course').innerHTML = '';
+    document.querySelector('.cards-container').innerHTML = '';
     const wddCourses = courses.filter(course => course.subject.includes("WDD"));
     createCourseCard(wddCourses);
     addCourseCard(wddCourses);
+
 
 });
 
@@ -134,21 +135,32 @@ function createCourseCard(filteredCourses) {
         let card = document.createElement('section');
         let subject = document.createElement('h3');
         let number = document.createElement('p');
-        let credits = document.createElement('p');
+        if (course.completed === true) {
+            card.style.backgroundColor = "aqua"
+            card.style.color = "black"
+        }
+        else {
+            card.style.backgroundColor = "grey"
+            card.style.color = "white"
+        };
 
 
-        credits.innerHTML = `${course.credits}`;
         subject.innerHTML = `${course.subject}`;
         number.innerHTML = `${course.number}`;
 
 
         card.appendChild(subject);
         card.appendChild(number);
-        card.appendChild(credits);
 
 
 
-        document.querySelector('.course').appendChild(card);
+
+        document.querySelector('.cards-container').appendChild(card);
+        card.style.display = "flex";
+        card.style.justifyContent = "center";
+        card.style.border = "1px solid black";
+        
+        
 
     });
 }
@@ -161,6 +173,8 @@ function addCourseCard(courseArray) {
 
     document.querySelector('.total').innerHTML = `Total Credits: ${totalCredits}`;
 }
+
+
 
 
 

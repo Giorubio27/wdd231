@@ -193,24 +193,35 @@ footer img {
 
 
 /*my course card CSS  */
+.classy nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
 .course {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     color: black;
 
 }
+.course a {
+    padding: 15px 30px;
+}
 
 
-.course section {
+
+.cards-container section {
     display: flex;
     flex-flow: row wrap;
 
-    
 }
-.course li a {
-    display: contents;
+
+
+
+@media (min-width: 500px) {
+
+    
 }
