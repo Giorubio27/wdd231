@@ -140,8 +140,8 @@ function createCourseCard(filteredCourses) {
             card.style.color = "black"
         }
         else {
-            card.style.backgroundColor = "grey"
-            card.style.color = "white"
+            card.style.backgroundColor = "darkgrey"
+            card.style.color = "black"
         };
 
 
