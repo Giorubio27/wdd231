@@ -95,7 +95,7 @@ const courses = [
 
 createCourseCard(courses);
 addCourseCard(courses);
-// highlightCourses(courses);
+
 
 
 const allLink = document.querySelector('#all');
