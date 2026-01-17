@@ -94,30 +94,39 @@ const courses = [
 ]
 
 createCourseCard(courses);
+addCourseCard(courses);
+// highlightCourses(courses);
 
 
 const allLink = document.querySelector('#all');
 
 allLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
-    createCourseCard(courses.filter(course => course.subject.includes("")));
-    addCredits(filteredCourses);
+    const allCourses = courses.filter(course => course.subject.includes(""));
+    createCourseCard(allCourses);
+    addCourseCard(allCourses);
+
 });
 
 const cseLink = document.querySelector('#cse');
 
 cseLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
-    createCourseCard(courses.filter(course => course.subject.includes("CSE")))
-    addCredits(filteredCourses)
+    const cseCourses = courses.filter(course => course.subject.includes("CSE"));
+    createCourseCard(cseCourses);
+    addCourseCard(cseCourses);
+
+
 });
 
 const wddLink = document.querySelector('#wdd');
 
 wddLink.addEventListener('click', () => {
     document.querySelector('.course').innerHTML = '';
-    createCourseCard(courses.filter(course => course.subject.includes("WDD")))
-    addCredits(filteredCourses);
+    const wddCourses = courses.filter(course => course.subject.includes("WDD"));
+    createCourseCard(wddCourses);
+    addCourseCard(wddCourses);
+
 });
 
 function createCourseCard(filteredCourses) {
@@ -144,11 +153,17 @@ function createCourseCard(filteredCourses) {
     });
 }
 
-function addCredits(filteredCourses) {
-    const totalCredits = filteredCourses.reduce((sum, course) => sum + course, 0);
-    console.log("Total Credits:", totalCredits);
-    return totalCredits;
+function addCourseCard(courseArray) {
+    const totalCredits = courseArray.reduce((sum, course) => {
+        return sum + course.credits
+    }, 0);
+
+
+    document.querySelector('.total').innerHTML = `Total Credits: ${totalCredits}`;
 }
+
+
+
 
 
 
