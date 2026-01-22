@@ -11,7 +11,7 @@ hambutton.addEventListener('click', () => {
 })
 
 async function getCompanyData() {
-    const response = await fetch('/chamber/data/members.json')
+    const response = await fetch('data/members.json')
     const data = await response.json();
 
     displayCompanyCard(data.companies)
@@ -31,7 +31,7 @@ const displayCompanyCard = (companies) => {
         name.textContent = company.name;
         address.textContent = company.address;
         phone.textContent = company.phone;
-        url.textContent = company.url;
+        url.textContent = company.companyurl;
         url.setAttribute('href', company.companyurl);
         image.setAttribute('src', company.img);
         image.setAttribute('alt', 'companyphoto')
@@ -43,10 +43,11 @@ const displayCompanyCard = (companies) => {
         card.style.boxShadow = '0 0 10px black'
 
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
-        card.appendChild(image);
+        
         card.appendChild(membership);
 
         cards.appendChild(card);
