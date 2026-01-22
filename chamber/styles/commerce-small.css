@@ -3,6 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
 }
 
 main {
@@ -45,18 +49,28 @@ ul li {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    background-color: black;
 
 }
+li a:active, li a:hover {
+    background-color: black;
+    color: white;
+}
 
-.showtime li {
+.primetime li {
     display: block;
+    text-align: center;
+    font-size: x-large;
+}
+.primetime ul {
+    background-color: red
 }
 
 /* Grid button layout */
 
 .bcards {
     display: grid;
-    grid-template-rows: repeat(autofit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
     text-align: center;
@@ -73,27 +87,29 @@ ul li {
     height: 300px;
     padding-bottom: 1rem;
     border: 1px solid black;
+}
+    
 
-    h2 {
-        margin-top: 1rem;
-    }
+.bcards img {
+    width: 150px;
 
-    img {
-        width: 150px;
+}
 
-    }
-
-    a {
-        word-break: break-word;
-        margin-left: .5rem;
-        margin-right: .5rem;
-        margin-bottom: .5rem;
-    }
+.bcards a {
+    word-break: break-word;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
 
 
 
 
 
+
+.bcards section h2 {
+    margin-top: 1rem;
+    
 }
 
 .center {
@@ -124,42 +140,42 @@ button {
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
-
-
-
-    section {
-        width: 90%;
-        height: 75px;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        border: 2px solid black;
-
-    }
-
-    section:nth-child(even) {
-        background-color: #bbb;
-    }
-
-    a {
-        display: none;
-    }
-
-    p:last-child {
-        display: none;
-
-
-
-    }
 }
 
-.list img {
+
+#company-displays.list section {
+    width: 90%;
+    height: 75px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+#company-displays.list section:nth-child(even) {
+    background-color: #bbb;
+}
+
+#company-displays.list a {
+    display: none;
+}
+
+#company-displays.list p:last-child {
+    display: none;
+
+
+
+}
+
+
+#company-displays.list img {
     display: none;
 }
 
