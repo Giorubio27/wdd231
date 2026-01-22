@@ -52,6 +52,7 @@ ul li {
     display: block;
 }
 
+/* Grid button layout */
 
 .bcards {
     display: grid;
@@ -63,12 +64,33 @@ ul li {
 
 .bcards section {
     background-color: lightblue;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 0 20px black;
     width: 300px;
     height: 300px;
+    padding-bottom: 1rem;
     border: 1px solid black;
+
+    h2 {
+        margin-top: 1rem;
+    }
+
+    img {
+        width: 150px;
+
+    }
+
+    a {
+        word-break: break-word;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+    }
+
+
 
 
 
@@ -84,12 +106,57 @@ button {
 
 }
 
+/* list */
+
 .list section {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 
+}
+
+#company-displays.list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
+
+    section {
+        width: 90%;
+        height: 75px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+
+    }
+
+    section:nth-child(even) {
+        background-color: #bbb;
+    }
+
+    a {
+        display: none;
+    }
+
+    p:last-child {
+        display: none;
+
+
+
+    }
 }
 
 .list img {

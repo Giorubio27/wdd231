@@ -17,7 +17,7 @@ listbutton.addEventListener('click', showList);
 
 function showList() {
     display.classList.add('list');
-    display.classList.remove('grid');
+    display.classList.remove('bcards');
 }
 
 
@@ -52,6 +52,7 @@ const displayCompanyCard = (companies) => {
         image.setAttribute('src', company.img);
         image.setAttribute('alt', 'companyphoto')
         membership.innerHTML = `Current Membership is: ${company.membership}`;
+        
 
         card.appendChild(name);
         card.appendChild(image);
