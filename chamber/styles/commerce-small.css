@@ -1,4 +1,10 @@
 /* general  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     width: 100%;
 }
@@ -55,6 +61,43 @@ ul li {
     text-align: center;
 }
 
+.bcards section {
+    background-color: lightblue;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 20px black;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+
+
+}
+
+.center {
+    text-align: center;
+    margin: 1rem;
+}
+
+button {
+    padding: .5rem 1rem;
+
+}
+
+.list section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+}
+
+.list img {
+    display: none;
+}
+
+
+
 
 
 @media (min-width: 400px) {
@@ -62,5 +105,18 @@ ul li {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+    }
+
+    header {
+        background-color: lightblue;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        background-color: lightblue;
+        margin-top: 2rem;
     }
 }
