@@ -1,0 +1,66 @@
+/* general  */
+main {
+    width: 100%;
+}
+
+
+/* Header */
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+img {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+.showtime li {
+    display: block;
+}
+
+
+.bcards {
+    display: grid;
+    grid-template-rows: repeat(autofit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    text-align: center;
+}
+
+
+
+@media (min-width: 400px) {
+    .bcards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
