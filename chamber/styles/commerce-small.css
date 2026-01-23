@@ -67,7 +67,9 @@ li a:active, li a:hover {
 }
 
 /* Grid button layout */
-
+h1 {
+    text-align: center;
+}
 .bcards {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
