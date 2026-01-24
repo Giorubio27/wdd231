@@ -51,7 +51,7 @@ const displayCompanyCard = (companies) => {
         url.setAttribute('href', company.companyurl);
         image.setAttribute('src', company.img);
         image.setAttribute('alt', 'companyphoto');
-        image.setAttribute('loading', 'lazyload');
+        image.setAttribute('loading', 'lazy');
         membership.innerHTML = `Current Membership is: ${company.membership}`;
         
 
