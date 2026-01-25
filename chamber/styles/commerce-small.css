@@ -6,7 +6,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
-    
+
 }
 
 main {
@@ -18,7 +18,7 @@ main {
 header {
     display: grid;
     grid-template-rows: 1fr;
-    
+
 }
 
 img {
@@ -31,7 +31,7 @@ img {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.829);
     color: white;
-    
+
 }
 
 ul {
@@ -41,15 +41,16 @@ ul {
 ul li {
     display: none;
 }
+
 ul li a {
     color: white;
-    
+
 }
 
 #menu::before {
     content: "≡";
     color: white;
-    
+
 }
 
 #menu {
@@ -65,10 +66,12 @@ ul li a {
     padding-left: 4px;
     padding-right: 4px;
     color: rgb(145, 132, 62);
-    
+
 
 }
-li a:active, li a:hover {
+
+li a:active,
+li a:hover {
     background-color: black;
     color: white;
 }
@@ -77,8 +80,9 @@ li a:active, li a:hover {
     display: block;
     text-align: center;
     font-size: x-large;
-    
+
 }
+
 .primetime ul {
     background-color: rgb(145, 132, 62);
     padding-bottom: 1rem;
@@ -88,6 +92,7 @@ li a:active, li a:hover {
 h1 {
     text-align: center;
 }
+
 .bcards {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
@@ -108,7 +113,7 @@ h1 {
     padding-bottom: 1rem;
     border: 1px solid black;
 }
-    
+
 
 .bcards img {
     width: 150px;
@@ -130,7 +135,7 @@ h1 {
 
 .bcards section h2 {
     margin-top: 1rem;
-    
+
 }
 
 .center {
@@ -180,6 +185,96 @@ button {
 
 }
 
+/* Homepage css info */
+
+article {
+    display: flex;
+    position: relative;
+
+}
+
+article img {
+    width: 100%;
+    border: 2px solid gold;
+
+}
+
+article button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 7%;
+    box-shadow: 0 0 20px black;
+}
+
+.business {
+    display: grid;
+    
+    
+    
+
+}
+
+
+
+.business-card {
+    border: 1px solid black;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 20px;
+    
+
+}
+.bottom-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    align-items: center;
+    
+    
+
+}
+
+.bottom-card img {
+    width: 100%;
+    border: 1px solid black;
+}
+.bottom-card a {
+    word-break: break-word;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    
+}
+
+
+
+
+.business img {
+    width: 80%;
+}
+
+.business section h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* end */
+
+
 #company-displays.list section:nth-child(even) {
     background-color: #bbb;
 }
@@ -224,13 +319,16 @@ button {
         margin-top: 2rem;
         color: white;
     }
+
     footer p {
         padding: .5rem;
     }
+
     footer img {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
     footer h2 {
         margin-top: .5rem;
     }
