@@ -231,6 +231,9 @@ article button {
     grid-template-columns: 1fr 1.5fr;
     gap: 20px;
     align-items: center;
+    padding-bottom: 20px;
+    
+    
     
     
 
@@ -239,6 +242,9 @@ article button {
 .bottom-card img {
     width: 100%;
     border: 1px solid black;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    
 }
 .bottom-card a {
     word-break: break-word;
