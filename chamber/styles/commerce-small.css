@@ -381,7 +381,7 @@ article.hero a {
         display: flex;
         justify-content: space-between;
         align-items: end;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.829);
     }
     section.naver {
         display: flex;
