@@ -38,6 +38,7 @@ export function displayWeather(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     myIcon.setAttribute('src', iconsrc);
     myIcon.setAttribute('alt', data.weather[0].description);
+    myIcon.setAttribute('loading', 'lazy');
 }
 
 
