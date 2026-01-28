@@ -206,8 +206,15 @@ article button {
     border-radius: 7%;
     box-shadow: 0 0 20px black;
 }
+.current-weather {
+    border: 1px solid black;
+    background-color: #bbb;
+    border-radius: .5rem;
+    text-align:center;
+    margin: 1rem;
 
-.business {
+}
+.business, .events {
     display: grid;
     
     
@@ -217,7 +224,7 @@ article button {
 
 
 
-.business-card {
+.business-card, .event-card {
     border: 1px solid black;
     border-radius: .5rem;
     text-align: center;
@@ -226,7 +233,7 @@ article button {
     
 
 }
-.bottom-card {
+.bottom-card, .bottom-eventcard {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 20px;
@@ -239,7 +246,7 @@ article button {
 
 }
 
-.bottom-card img {
+.bottom-card img, .bottom-eventcard img {
     width: 100%;
     border: 1px solid black;
     margin-top: 1rem;
@@ -260,11 +267,11 @@ article button {
 
 
 
-.business img {
+.business img, .events img {
     width: 80%;
 }
 
-.business section h2 {
+.business section h2, .events section h2 {
     border-bottom: 1px solid black;
     margin-bottom: .5rem;
 }
