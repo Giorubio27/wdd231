@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/commerce-small.css">
     <link rel="stylesheet" href="styles/commerce-large.css">
-    
     <script type="module" src="scripts/cards.mjs"></script>
     <script type="module" src="scripts/weathertoday.mjs"></script>
     <script type="module" src="scripts/forecast.mjs"></script>
@@ -33,7 +32,7 @@
 
 <body>
     <header>
-        <div>
+        <div class="big-head">
             <section class="header">
                 <img src="images/logo.gr.png" alt="chamber logo">
                 <span>Las Vegas Chamber of Commerce</span>
@@ -62,28 +61,57 @@
         </article>
         <h1>Home</h1>
         <div>
-            <section class="events">
+            <div class="wide-screen">
+                <div>
+                    <section class="event-block">
+                        <h2>Events</h2>
+                    </section>
 
-            </section>
-            <section class="current-weather">
-                <h2 id="town"></h2>
-                <p id="description"></p>
-                <p>The current temperature in Las Vegas is <span id="current-weather"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                </figure>
+                    <section class="events">
 
-            </section>
-            <section class="forecast">
 
-            </section>
-            <div class="business-container">
-                <section class="business">
+                    </section>
+                </div>
+            
+                <div>
+                    <section class="event-block">
+                        <h2>Weather</h2>
+                    </section>
+                    <section class="current-weather">
+                        <h2 id="town"></h2>
+                        <p id="description"></p>
+                        <p>The current temperature in Las Vegas is <span id="current-weather"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                        </figure>
 
+                    </section>
+                </div>
+           
+                <div>
+                    <section class="event-block">
+                        <h2>Weather Forecast</h2>
+                    </section>
+                    <section class="forecast">
+                        <p id="for-today"></p>
+                        <p id="for-tmw"></p>
+                        <p id="for-another"></p>
+
+                    </section>
+                </div>
+            </div>
+            <div class="business-wide">
+                <section class="event-block">
+                    <h2>Business Spotlight</h2>
                 </section>
+                <div class="business-container">
+                    <section class="business">
+
+                    </section>
+                </div>
             </div>
         </div>
-        
+
 
 
     </main>
@@ -95,22 +123,26 @@
                 (702) 867-5309
             </p>
         </div>
-        <nav class="ducks">
-            <a href="facebook.com">
-                <img src="images/facebook.webp" alt="facbook" loading="lazy">
-            </a>
-            <a href="instagram.com">
-                <img src="images/instagram-icon.webp" alt="instagram" loading="lazy">
-            </a>
-            <a href="github.com">
-                <img src="images/github_icon.webp" alt="github" loading="lazy">
-            </a>
-        </nav>
-        <span>WDD231 Class Project</span>
-        <!--  -->
-        <p>Giovanni Rubio</p>
-        <p>©️<span id="currentyear"></span> Las Vegas Chamber of Commerce</p>
-        <p id="last_modified">"Last modified"</p>
+        <div>
+            <nav class="ducks">
+                <a href="facebook.com">
+                    <img src="images/facebook.webp" alt="facbook" loading="lazy">
+                </a>
+                <a href="instagram.com">
+                    <img src="images/instagram-icon.webp" alt="instagram" loading="lazy">
+                </a>
+                <a href="github.com">
+                    <img src="images/github_icon.webp" alt="github" loading="lazy">
+                </a>
+            </nav>
+        </div>
+        <div>
+            <span>WDD231 Class Project</span>
+            <!--  -->
+            <p>Giovanni Rubio</p>
+            <p>©️<span id="currentyear"></span> Las Vegas Chamber of Commerce</p>
+            <p id="last_modified">"Last modified"</p>
+        </div>
 
     </footer>
 

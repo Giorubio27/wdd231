@@ -214,14 +214,39 @@ article button {
     margin: 1rem;
 
 }
-.business, .events {
+.business {
     display: grid;
-    
-    
-    
 
 }
-
+.events {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr;
+}
+.event-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 40px;
+    
+    
+    
+}
+.forecast{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+.forecast p {
+    padding: 1rem;
+}
 
 
 .business-card, .event-card {
@@ -274,6 +299,7 @@ article button {
 .business section h2, .events section h2 {
     border-bottom: 1px solid black;
     margin-bottom: .5rem;
+   padding-bottom: 1rem;
 }
 
 
@@ -312,7 +338,7 @@ article button {
 
 
 
-@media (min-width: 400px) {
+@media (min-width: 700px) {
     .bcards {
         display: flex;
         flex-flow: row wrap;
@@ -345,4 +371,72 @@ article button {
     footer h2 {
         margin-top: .5rem;
     }
+
+    /* Home-large Layout */
+    .big-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        background-color: black;
+    }
+    section.naver {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    section.naver a {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    section.naver a:hover, section.naver:active {
+        color: black;
+        background-color: white;
+    }
+    
+    ul li {
+        display: contents;
+        
+        
+    }
+    ul {
+        display: flex;
+        
+        
+        
+
+    }
+    #menu {
+        display: none;
+    }
+    
+    .wide-screen  {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        
+    }
+    .business-wide {
+        display: grid;
+       
+    }
+    .business {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+
 }

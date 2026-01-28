@@ -46,10 +46,10 @@ export const displayEventCard = (events) => {
 
 
         name.textContent = event.name;
-        address.textContent = event.address;
-        price.innerHTML = event.price;
-        date.innerHTML = event.date;
-        time.innerHTML = event.time;
+        address.textContent = `Address: ${event.address}`;
+        price.innerHTML = `Price: ${event.price}`;
+        date.innerHTML = `Date: ${event.date}`;
+        time.innerHTML = `Time: ${event.time}`;
         image.setAttribute('src', event.img);
         image.setAttribute('alt', 'event photo');
         image.setAttribute('loading', 'lazy');
