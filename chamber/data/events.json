@@ -6,7 +6,7 @@
             "price": 19.99,
             "date": "01/29/2026",
             "time": "7pm PST",
-            "img": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/lasvegas/VGK-A_95C6204C-BF74-18F3-C46FD4A71B121322_95c81d09-97c1-fbf6-915f971aee894ef6.jpg"
+            "img": "./images/vgk.webp"
         },
         {
             "name": "Eagles",
@@ -14,7 +14,7 @@
             "price": 19.99,
             "date": "01/30/2026",
             "time": "8:30 pm PST",
-            "img": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_avif,h_546,q_65,w_720/v1/crm/lasvegas/MSG-Sphere_EAGLES_Website-Homepage-Carousel_1920x1080_FE90FF65-0B83-3FC7-7723D26D991B9E9C_fe920db2-ac41-e404-44831c67482346f3.jpg"
+            "img": "./images/eagles.webp"
         },
         {
             "name": "Aliante Golf Club Tournament",
@@ -22,7 +22,7 @@
             "price": 100.00,
             "date": "01/11/2026",
             "time": "3pm PST",
-            "img": "https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_363,q_75,w_480/https://lasvegas.simpleviewcrm.com/images/listings/original_Aliante--5-of-9--5bc3f569c89910f.jpg"
+            "img": "./images/aliante.webp"
         },
         {
             "name": "Nathan Burton Comedy Magic",
@@ -30,7 +30,7 @@
             "price": 22.00,
             "date": "02/11/2026",
             "time": "7pm PST",
-            "img": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_363,q_75,w_480/v1/crm/lasvegas/new-nathon-burton-show_468DC65D-D5B9-851D-31A0A36E8E0A1066_46950685-a2bb-866b-947cd532b4e706e6.jpg"
+            "img": "./images/magicman.webp"
         },
         {
             "name": "Jim Henson’s Labyrinth: In Concert 40th Anniversary",
@@ -38,7 +38,7 @@
             "price": 44.99,
             "date": "01/11/2026",
             "time": "8pm PST",
-            "img": "https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/lasvegas/Jim-Henson-Labyrinth-Palms_37E6F22E-FD4A-BEE5-4D79AA15CC877B2C_38ad0210-92e8-094f-ae88dc0d2021c476.jpg"
+            "img": "./images/labrynth.webp"
         }
     ]
 }
