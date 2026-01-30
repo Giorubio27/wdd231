@@ -46,7 +46,6 @@ export const displayCompanyCard = (companies) => {
         name.textContent = company.name;
         image.setAttribute('src', company.img);
         image.setAttribute('alt', 'companyphoto');
-        image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '125');
         image.setAttribute('height', '63');
         phone.textContent = `Phone: ${company.phone}`;
