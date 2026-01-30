@@ -47,6 +47,8 @@ export const displayCompanyCard = (companies) => {
         image.setAttribute('src', company.img);
         image.setAttribute('alt', 'companyphoto');
         image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '125');
+        image.setAttribute('height', '63');
         phone.textContent = `Phone: ${company.phone}`;
         url.textContent = `Website: ${company.companyurl}`;
         url.setAttribute('href', company.companyurl);
