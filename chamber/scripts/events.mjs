@@ -52,7 +52,8 @@ export const displayEventCard = (events) => {
         time.innerHTML = `Time: ${event.time}`;
         image.setAttribute('src', event.img);
         image.setAttribute('alt', 'event photo');
-        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '125px');
+        image.setAttribute('height', '63px');
         card.setAttribute('class', 'event-card');
         bottomCard.setAttribute('class', 'bottom-eventcard');
         info.setAttribute('class', 'contact-info');

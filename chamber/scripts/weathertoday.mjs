@@ -39,6 +39,8 @@ export function displayWeather(data) {
     myIcon.setAttribute('src', iconsrc);
     myIcon.setAttribute('alt', data.weather[0].description);
     myIcon.setAttribute('loading', 'lazy');
+    myIcon.setAttribute('width', '50px');
+    myIcon.setAttribute('height', '50px');
 }
 
 
