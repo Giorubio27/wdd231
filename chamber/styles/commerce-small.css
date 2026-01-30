@@ -216,6 +216,7 @@ article.hero a {
     border-radius: .5rem;
     text-align:center;
     margin: 1rem;
+    min-height: 200px;
 
 }
 .business {
@@ -226,6 +227,11 @@ article.hero a {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 3fr;
+}
+.business img, .events img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 250 / 167;
 }
 .event-block {
     display: flex;
