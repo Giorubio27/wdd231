@@ -40,7 +40,8 @@ export function displayWeather(data) {
     myIcon.setAttribute('alt', data.weather[0].description);
     myIcon.setAttribute('loading', 'lazy');
     myIcon.setAttribute('width', '50px');
-    myIcon.setAttribute('height', '50px');
+    myIcon.setAttribute('height', 'auto');
+    myIcon.setAttribute('object-fit', 'contain');
 }
 
 

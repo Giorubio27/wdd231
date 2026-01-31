@@ -6,7 +6,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    
 }
 
 
@@ -34,6 +34,12 @@ img {
     background-color: rgba(0, 0, 0, 0.829);
     color: white;
 
+}
+.header img {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 }
 
 ul {
@@ -234,6 +240,7 @@ article.hero a {
     width: 100%;
     height: auto;
     aspect-ratio: 250 / 167;
+    object-fit: cover;
 }
 .event-block {
     display: flex;
@@ -249,15 +256,17 @@ article.hero a {
     
 }
 .forecast{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    display: grid;
+    place-content: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
     
 }
 .forecast p {
     padding: 1rem;
+}
+.fork h2 {
+    font-size: 1em;
 }
 
 
@@ -304,9 +313,7 @@ article.hero a {
 
 
 
-.business img, .events img {
-    width: 80%;
-}
+
 
 .business section h2, .events section h2 {
     border-bottom: 1px solid black;
