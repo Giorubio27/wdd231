@@ -352,7 +352,44 @@ article.hero a {
 #company-displays.list img {
     display: none;
 }
+footer {
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(0, 0, 0, 0.829);
+    margin-top: 2rem;
+    color: white;
+}
 
+footer p {
+    padding: .5rem;
+}
+
+/* JOIN US CSS */
+fieldset {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.flex-city {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+.member-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    
+}
+.member-flex input {
+    margin-top: 1rem;
+}
+.member-flex input[type="radio"] {
+    margin-right: .5rem;
+    
+}
 
 
 
