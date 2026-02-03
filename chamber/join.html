@@ -60,10 +60,10 @@
 
             </h1>
             <fieldset class="flex-city">
-                <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname" autocomplete="given-name">
-                <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname" autocomplete="family-name">
-                <label for="organization-title">Title in Organization</label><input type="text" id="title" name="organization-title" autocomplete="organization-title">
-                <label for="phone">Phone: </label><input type="tel" id="phone" name="phone" autocomplete="tel">
+                <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname" title="please enter first name" autocomplete="given-name">
+                <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname" title="please enter last" autocomplete="family-name">
+                <label for="organization-title">Title in Organization</label><input type="text" id="title" name="organization-title" title="enter your title in Organization with a minimum of 7 characters. Letters, hyphens, or spaces only" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title">
+                <label for="phone">Phone: </label><input type="tel" id="phone" name="phone" autocomplete="tel" required>
                 <label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="email" placeholder="email@example.com">
             </fieldset>
             <fieldset>
