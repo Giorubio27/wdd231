@@ -1,0 +1,11 @@
+* {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background-color: black;
+}
+footer {
+    background-color: black;
+}
