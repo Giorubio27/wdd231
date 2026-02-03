@@ -55,20 +55,20 @@
 
     </header>
     <main>
-       <form method="get" action="thanks.html">
+       <form method="get" action="thankyou.html">
             <h1>Join Us This Year!
 
             </h1>
             <fieldset class="flex-city">
-                <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname">
-                <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname">
-                <label for="organization-title">Title in Organization</label><input type="text" id="title" name="organization-title">
-                <label for="phone">Phone: </label><input type="tel" id="phone" name="phone">
-                <label for="email">Email: </label><input type="email" id="email" name="email">
+                <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname" autocomplete="given-name">
+                <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname" autocomplete="family-name">
+                <label for="organization-title">Title in Organization</label><input type="text" id="title" name="organization-title" autocomplete="organization-title">
+                <label for="phone">Phone: </label><input type="tel" id="phone" name="phone" autocomplete="tel">
+                <label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="email" placeholder="email@example.com">
             </fieldset>
             <fieldset>
                 <div>Organization Information</div>
-                <label for="name-organization>">Organization Name: </label><input type="text" id="org-name" name="name-organization">
+                <label for="name-organization>">Organization Name: </label><input type="text" id="org-name" name="name-organization" autocomplete="name-organization">
             </fieldset>
             <fieldset class="member-flex">
                 <div>Which membership would you like? </div>
