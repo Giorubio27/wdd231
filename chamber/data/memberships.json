@@ -3,21 +3,29 @@
         {
             "name": "Non-profit",
             "image": "",
+            "perks": "Access to club, a shout out every trimester, and networking opportunities",
+            "cost": "0",
             "button": "Learn More"
         },
         {
             "name": "Bronze",
             "image": "",
+            "perks": "Access to club, a shout out every other month, and networking opportunities, and a dedicated professional to any tech needs.",
+            "cost": "$10 usd per month",
             "button": "Learn More"
         },
         {
             "name": "Silver",
             "image": "",
+            "perks": "Access to club, a shout out every month, and networking opportunities, and a dedicated professional to any tech needs. You will also recieve a dedicated month of advertising were your content will be prioritized.",
+            "cost": "$20 USD per month",
             "button": "Learn More"
         },
         {
             "name": "Gold",
             "image": "",
+            "perks": "Access to club, a shout every month, and networking opportunities, and a dedicated professional to any tech needs. You will also recieve a dedicated 3 months of advertising were your content will be prioritized. You will recieve priority on choosing the months above silver members.",
+            "cost": "$30 USD per month",
             "button": "Learn More"
         }
     ]
