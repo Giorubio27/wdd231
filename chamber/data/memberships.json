@@ -1,0 +1,24 @@
+{
+    "memberships": [
+        {
+            "name": "Non-profit",
+            "image": "",
+            "button": "Learn More"
+        },
+        {
+            "name": "Bronze",
+            "image": "",
+            "button": "Learn More"
+        },
+        {
+            "name": "Silver",
+            "image": "",
+            "button": "Learn More"
+        },
+        {
+            "name": "Gold",
+            "image": "",
+            "button": "Learn More"
+        }
+    ]
+}
