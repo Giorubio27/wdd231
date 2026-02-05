@@ -1,0 +1,1 @@
+const memberCards = document.querySelector('#membercards')
