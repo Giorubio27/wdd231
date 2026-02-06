@@ -433,6 +433,10 @@ fieldset {
     margin: 1rem;
     
 }
+.join {
+    text-align: left;
+    margin-left: 1rem;
+}
 
 
 
@@ -534,6 +538,45 @@ fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* join form */
+    .bigman {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    #membercards {
+        display: grid;
+        width: 100%;
+        margin: 0;
+    }
+    #membercards section {
+        width: 90%;
+        height: 50%;
+        background-color: lightblue;
+    }
+    form {
+        margin: 1rem;
+    }
+    @keyframes fadeColor {
+        from {
+            background-color: black;
+        }
+        to {
+            background-color: gold;
+        }
+    }
+    #member-info {
+        animation-name: fadeColor;
+        animation-duration: 3s;
+        background-color: gold;
+
+    }
+    
+    
+    
+
+    
 
 
 

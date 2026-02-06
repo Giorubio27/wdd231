@@ -57,59 +57,64 @@
 
     </header>
     <main>
-        <form method="get" action="thankyou.html">
-            <h1>Join Us This Year!
+        <h1 class="join">Join Us This Year!
+        
+        </h1>
+        <div class="bigman">
+            
+            <form method="get" action="thankyou.html">
+                
+                <fieldset class="flex-city">
+                    <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname"
+                        title="please enter first name" autocomplete="given-name" required>
+                    <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname"
+                        title="please enter last" autocomplete="family-name" required>
 
-            </h1>
-            <fieldset class="flex-city">
-                <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname"
-                    title="please enter first name" autocomplete="given-name" required>
-                <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname"
-                    title="please enter last" autocomplete="family-name" required>
+                    <label for="organization-title">Title in Organization</label><input type="text" id="organization-title"
+                        name="organization-title"
+                        title="enter your title in Organization with a minimum of 7 characters. Letters, hyphens, or spaces only"
+                        pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" required>
 
-                <label for="organization-title">Title in Organization</label><input type="text" id="organization-title"
-                    name="organization-title"
-                    title="enter your title in Organization with a minimum of 7 characters. Letters, hyphens, or spaces only"
-                    pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" required>
+                    <label for="phone">Phone: </label><input type="tel" id="phone" name="phone"
+                        title="please enter a 10 digit number" autocomplete="tel" required>
 
-                <label for="phone">Phone: </label><input type="tel" id="phone" name="phone"
-                    title="please enter a 10 digit number" autocomplete="tel" required>
+                    <label for="email">Email: </label><input type="email" id="email" name="email" title="enter your email"
+                        autocomplete="email" placeholder="email@example.com" required>
 
-                <label for="email">Email: </label><input type="email" id="email" name="email" title="enter your email"
-                    autocomplete="email" placeholder="email@example.com" required>
+                </fieldset>
+                <fieldset>
+                    <div>Organization Information</div>
+                    <label for="organization">Organization Name: </label><input type="text" id="organization"
+                        name="organization" title="enter your business name" autocomplete="organization" required>
+                </fieldset>
+                <fieldset class="member-flex">
+                    <div>Which membership would you like? </div>
+                    <label for="np-membership"><input type="radio" id="np-membership" name="membership" value="np"
+                            required>Np</label>
+                    <dialog id="membership-details"></dialog>
+                    <label for="bronze-membership"><input type="radio" id="bronze-membership" name="membership"
+                            value="bronze">Bronze</label>
+                    <label for="silver-membership"><input type="radio" id="silver-membership" name="membership"
+                            value="silver">Silver</label>
+                    <label for="gold-membership"><input type="radio" id="gold-membership" name="membership"
+                            value="gold">Gold</label>
+                </fieldset>
+                <fieldset>
+                    <label for="organization-description">Organization description</label>
+                    <textarea title="Write a description of your business" id="organization-description"
+                        name="organization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusamus eaque architecto consectetur quisquam, illum quasi pariatur nostrum sed veritatis quidem illo hic laborum praesentium deleniti enim, unde, eveniet eius!</textarea>
+                </fieldset>
+                <input type="hidden" id="submit-time" name="submit-time">
+                <button type="submit">Join now</button>
 
-            </fieldset>
-            <fieldset>
-                <div>Organization Information</div>
-                <label for="organization">Organization Name: </label><input type="text" id="organization"
-                    name="organization" title="enter your business name" autocomplete="organization" required>
-            </fieldset>
-            <fieldset class="member-flex">
-                <div>Which membership would you like? </div>
-                <label for="np-membership"><input type="radio" id="np-membership" name="membership" value="np"
-                        required>Np</label>
-                <dialog id="membership-details"></dialog>
-                <label for="bronze-membership"><input type="radio" id="bronze-membership" name="membership"
-                        value="bronze">Bronze</label>
-                <label for="silver-membership"><input type="radio" id="silver-membership" name="membership"
-                        value="silver">Silver</label>
-                <label for="gold-membership"><input type="radio" id="gold-membership" name="membership"
-                        value="gold">Gold</label>
-            </fieldset>
-            <fieldset>
-                <label for="organization-description">Organization description</label>
-                <textarea title="Write a description of your business" id="organization-description"
-                    name="organization-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusamus eaque architecto consectetur quisquam, illum quasi pariatur nostrum sed veritatis quidem illo hic laborum praesentium deleniti enim, unde, eveniet eius!</textarea>
-            </fieldset>
-            <input type="hidden" id="submit-time" name="submit-time">
-            <button type="submit">Join now</button>
-
-        </form>
-        <dialog id="member-info">
-            <div id="modal"></div>
-            <button id="close-modal">Close</button>
-        </dialog>
-        <div id="membercards"></div>
+            </form>
+            <dialog id="member-info">
+                <div id="modal"></div>
+                <button id="close-modal">Close</button>
+            </dialog>
+            <div id="membercards"></div>
+        </div>
+        
         
     </main>
     <footer>
