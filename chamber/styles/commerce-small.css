@@ -567,7 +567,7 @@ button {
     .bigman {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr;
     }
     #membercards {
         display: grid;
@@ -583,20 +583,15 @@ button {
         margin: 1rem;
     }
    
-    }
-    #member-info {
-        animation-name: fadeColor;
-        animation-duration: 3s;
-        background-color: gold;
-
-    }
-    
-    
-    
-
-    
-
-
-
-
 }
+    
+
+    
+    
+    
+
+    
+
+
+
+
