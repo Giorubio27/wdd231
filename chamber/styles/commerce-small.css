@@ -153,6 +153,7 @@ h1 {
 
 button {
     padding: .5rem 1rem;
+    margin: 1rem;
 
 }
 
@@ -409,9 +410,7 @@ fieldset {
 
 }
 
-button {
-    margin: 1rem;
-}
+
 
 @keyframes fadeColor {
     from {
