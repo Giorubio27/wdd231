@@ -400,12 +400,27 @@ fieldset {
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
+    background-color: lightblue;
 }
 #membercards a {
     border: 1px solid black;
     border-radius: .5rem;
     padding: .2rem;
 
+}
+
+button {
+    margin: 1rem;
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: gold;
+    }
 }
 
 #member-info {
@@ -416,6 +431,8 @@ fieldset {
     max-width: 300px;
     width: 90%;
     margin: auto;
+    animation-name: fadeColor;
+    animation-duration: 3s;
 
 }
 #member-info::backdrop {
@@ -436,6 +453,13 @@ fieldset {
 .join {
     text-align: left;
     margin-left: 1rem;
+}
+.flex-field{
+    display: flex;
+}
+.flex-field textarea {
+    width: 90%;
+    height: 100px;
 }
 
 
@@ -558,13 +582,7 @@ fieldset {
     form {
         margin: 1rem;
     }
-    @keyframes fadeColor {
-        from {
-            background-color: black;
-        }
-        to {
-            background-color: gold;
-        }
+   
     }
     #member-info {
         animation-name: fadeColor;
