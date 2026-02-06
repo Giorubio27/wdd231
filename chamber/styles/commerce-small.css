@@ -386,9 +386,12 @@ fieldset {
 }
 .member-flex input {
     margin-top: 1rem;
+    
 }
+.member-flex input[type="text"],
 .member-flex input[type="radio"] {
     margin-right: .5rem;
+    padding: 1rem;
     
 }
 #membercards section{
