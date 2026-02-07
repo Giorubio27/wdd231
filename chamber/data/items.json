@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "name": "The Las Vegas Strip",
+            "address": "Las Vegas Blvd S, Las Vegas, NV 89109",
+            "description": "The heart of Las Vegas, featuring world-famous resorts, casinos, nightlife, shopping, and nonstop entertainment along a walkable stretch.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Las_Vegas_Strip_at_night.jpg"
+        },
+        {
+            "name": "Bellagio Fountains",
+            "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "description": "Iconic free fountain show with choreographed water, lights, and music, performed multiple times nightly in front of the Bellagio.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bellagio_Fountains.jpg"
+        },
+        {
+            "name": "Fremont Street Experience",
+            "address": "Fremont St, Las Vegas, NV 89101",
+            "description": "Historic downtown attraction with a massive LED canopy, live music, street performers, casinos, and classic Vegas atmosphere.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Fremont_Street_Experience.jpg"
+        },
+        {
+            "name": "The Neon Museum",
+            "address": "770 Las Vegas Blvd N, Las Vegas, NV 89101",
+            "description": "Outdoor museum showcasing restored vintage neon signs from Las Vegas history, especially impressive during nighttime tours.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Neon_Museum_Las_Vegas.jpg"
+        },
+        {
+            "name": "Red Rock Canyon National Conservation Area",
+            "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+            "description": "Scenic desert conservation area featuring dramatic red rock formations, hiking trails, and a scenic drive just outside the city.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Red_Rock_Canyon_Las_Vegas.jpg"
+        },
+        {
+            "name": "Cirque du Soleil Las Vegas Shows",
+            "address": "Various locations on the Las Vegas Strip",
+            "description": "World-class live performances combining acrobatics, music, and storytelling, with multiple permanent shows exclusive to Las Vegas.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Cirque_du_Soleil_KA.jpg"
+        },
+        {
+            "name": "The Mob Museum",
+            "address": "300 Stewart Ave, Las Vegas, NV 89101",
+            "description": "Interactive museum exploring the history of organized crime and law enforcement in the United States, featuring authentic artifacts.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/The_Mob_Museum_exterior.jpg"
+        },
+        {
+            "name": "Omega Mart by Meow Wolf",
+            "address": "3215 S Rancho Dr, Las Vegas, NV 89102",
+            "description": "Immersive and surreal art experience disguised as a grocery store, filled with interactive exhibits and hidden narratives.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Omega_Mart_Las_Vegas.jpg"
+        },
+        {
+            "name": "High Roller Observation Wheel",
+            "address": "3545 S Las Vegas Blvd, Las Vegas, NV 89109",
+            "description": "One of the tallest observation wheels in the world, offering panoramic views of the Las Vegas Strip, especially at sunset.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/High_Roller_Las_Vegas.jpg"
+        },
+        {
+            "name": "Welcome to Fabulous Las Vegas Sign",
+            "address": "5100 S Las Vegas Blvd, Las Vegas, NV 89119",
+            "description": "Iconic roadside sign and classic photo spot welcoming visitors to Las Vegas since 1959.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Welcome_to_Fabulous_Las_Vegas_sign.jpg"
+        }
+    ]
+}
