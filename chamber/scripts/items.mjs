@@ -1,6 +1,6 @@
-const itemCards = document.querySelector('.items');
+export const itemCards = document.querySelector('.items');
 
-async function GetItemData() {
+export async function GetItemData() {
     const response = await fetch('data/items.json')
     const itemData = await response.json();
 
@@ -10,7 +10,7 @@ async function GetItemData() {
 }
 
 
-const displayItemCards = (items) => {
+export const displayItemCards = (items) => {
     items.forEach((item) => {
         let itemCard = document.createElement('section');
         let itemName = document.createElement('h3');
@@ -19,7 +19,8 @@ const displayItemCards = (items) => {
 
         itemName.innerHTML = item.name;
         itemDescription.innerHTML = item.description;
-        itemImage.innerHTML = item.image_url;
+        
+        
 
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemDescription);
@@ -28,3 +29,4 @@ const displayItemCards = (items) => {
         itemCards.appendChild(itemCard);
     })
 }
+GetItemData();

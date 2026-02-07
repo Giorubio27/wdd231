@@ -464,6 +464,15 @@ fieldset {
     height: 100px;
 }
 
+/* Discover Page small */
+.items {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    text-align: center;
+}
+
 
 
 
