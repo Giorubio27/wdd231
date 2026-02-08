@@ -19,12 +19,14 @@ export const displayItemCards = (items) => {
 
         itemName.innerHTML = item.name;
         itemDescription.innerHTML = item.description;
+        itemImage.setAttribute('src', item.image_url);
         
         
 
         itemCard.appendChild(itemName);
-        itemCard.appendChild(itemDescription);
         itemCard.appendChild(itemImage);
+        itemCard.appendChild(itemDescription);
+        
 
         itemCards.appendChild(itemCard);
     })
