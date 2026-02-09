@@ -477,10 +477,13 @@ fieldset {
 
 .items section {
     background-color: gold;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description";
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
     box-shadow: 0 0 20px black;
     width: 100%;
     max-width: 350px;
@@ -490,134 +493,23 @@ fieldset {
 }
 .items section img {
     width: 250px;
+    grid-area: photo;
+    display: flex;
+    
 }
 .items section h3 {
     margin-top: 1rem;
+    grid-area: name;
+}
+.items section p {
+    grid-area: description;
 }
 
 
 
 
 
-@media (min-width: 700px) {
-    .bcards {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
 
-    header {
-        background-color: rgba(0, 0, 0);
-        margin-bottom: 2rem;
-    }
-
-    footer {
-        text-align: center;
-        display: grid;
-        grid-template-rows: 1fr;
-        background-color: rgba(0, 0, 0);
-        margin-top: 2rem;
-        color: white;
-    }
-
-    footer p {
-        padding: .5rem;
-    }
-
-    footer img {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    footer h2 {
-        margin-top: .5rem;
-    }
-
-    /* Home-large Layout */
-    .big-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        background-color: rgba(0, 0, 0);
-    }
-    section.naver {
-        display: flex;
-        justify-content: space-around;
-        
-    }
-    section.naver a {
-        display: flex;
-        justify-content: space-around;
-        padding-right: 2rem;
-        padding-left: 2rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    section.naver a:hover, section.naver:active {
-        color: black;
-        background-color: white;
-    }
-    
-    ul li {
-        display: contents;
-        
-        
-    }
-    ul {
-        display: flex;
-        
-        
-        
-
-    }
-    #menu {
-        display: none;
-    }
-    
-    .wide-screen  {
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr;
-        
-    }
-    .business-wide {
-        display: grid;
-       
-    }
-    .business {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-    .events {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /* join form */
-    .bigman {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    #membercards {
-        display: grid;
-        width: 100%;
-        margin: 0;
-    }
-    #membercards section {
-        width: 90%;
-        height: 50%;
-        background-color: lightblue;
-    }
-    form {
-        margin: 1rem;
-    }
-   
-}
     
 
     

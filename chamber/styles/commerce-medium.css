@@ -1,4 +1,5 @@
-@media (min-width: 700px) {
+@media (min-width: 32rem) {
+    
     .bcards {
         display: flex;
         flex-flow: row wrap;
@@ -6,7 +7,7 @@
     }
 
     header {
-        background-color: rgba(0, 0, 0, 0.829);
+        background-color: rgba(0, 0, 0);
         margin-bottom: 2rem;
     }
 
@@ -14,7 +15,7 @@
         text-align: center;
         display: grid;
         grid-template-rows: 1fr;
-        background-color: rgba(0, 0, 0, 0.829);
+        background-color: rgba(0, 0, 0);
         margin-top: 2rem;
         color: white;
     }
@@ -37,7 +38,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        background-color: black;
+        background-color: rgba(0, 0, 0);
     }
 
     section.naver {
@@ -106,7 +107,28 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* join form */
+    .bigman {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 
+    #membercards {
+        display: grid;
+        width: 100%;
+        margin: 0;
+    }
 
+    #membercards section {
+        width: 90%;
+        height: 50%;
+        background-color: lightblue;
+    }
+
+    form {
+        margin: 1rem;
+    }
 
 }
+
