@@ -1,0 +1,84 @@
+{
+    "top_fighters": [
+        {
+            "rank": 1,
+            "name": "Islam Makhachev",
+            "birthplace": "Makhachkala, Russia",
+            "dob": "1991-10-27",
+            "style": "Sambo / Wrestling",
+            "record": "28-1-0"
+        },
+        {
+            "rank": 2,
+            "name": "Ilia Topuria",
+            "birthplace": "Halle, Germany",
+            "dob": "1997-01-21",
+            "style": "Boxing / BJJ",
+            "record": "17-0-0"
+        },
+        {
+            "rank": 3,
+            "name": "Jon Jones",
+            "birthplace": "Rochester, NY, USA",
+            "dob": "1987-07-19",
+            "style": "Wrestling / Muay Thai",
+            "record": "28-1-0 (1 NC)"
+        },
+        {
+            "rank": 4,
+            "name": "Khamzat Chimaev",
+            "birthplace": "Beno-Yurt, Russia",
+            "dob": "1994-05-01",
+            "style": "Freestyle Wrestling",
+            "record": "14-0-0"
+        },
+        {
+            "rank": 5,
+            "name": "Alexander Volkanovski",
+            "birthplace": "Shellharbour, Australia",
+            "dob": "1988-09-29",
+            "style": "Kickboxing / Wrestling",
+            "record": "27-4-0"
+        },
+        {
+            "rank": 6,
+            "name": "Alex Pereira",
+            "birthplace": "São Bernardo do Campo, Brazil",
+            "dob": "1987-07-07",
+            "style": "Kickboxing",
+            "record": "13-3-0"
+        },
+        {
+            "rank": 7,
+            "name": "Petr Yan",
+            "birthplace": "Dudinka, Russia",
+            "dob": "1993-02-11",
+            "style": "Boxing / Muay Thai",
+            "record": "18-5-0"
+        },
+        {
+            "rank": 8,
+            "name": "Merab Dvalishvili",
+            "birthplace": "Tbilisi, Georgia",
+            "dob": "1991-01-10",
+            "style": "Sambo / Wrestling",
+            "record": "18-4-0"
+        },
+        {
+            "rank": 9,
+            "name": "Tom Aspinall",
+            "birthplace": "Manchester, England",
+            "dob": "1993-04-11",
+            "style": "BJJ / Boxing",
+            "record": "15-3-0 (1 NC)"
+        },
+        {
+            "rank": 10,
+            "name": "Max Holloway",
+            "birthplace": "Honolulu, HI, USA",
+            "dob": "1991-12-04",
+            "style": "Muay Thai / Boxing",
+            "record": "26-8-0"
+        }
+    ]
+}
