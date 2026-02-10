@@ -1,18 +1,25 @@
-@media (min-width: 62rem) {
-    .items {
-        display: grid;
+@media only screen and (min-width: 62rem) {
+    .items section {
         grid-template-areas: 
-        "photo name"
-        "photo description";
-    }
-    .items section h3 {
-        grid-area: name;
+        "photo"
+        "name"
+        "description"
+        "learnmore";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        margin: 0;
+        
+        
     }
     .items section img {
-        grid-area: photo;
+        width: 100%;
+        height: 150px;
+        margin-top: 0;
+        padding: 0;
     }
-    .items section p {
-        grid-area: description;
+    .items section h3 {
+        margin: 1rem;
+        text-decoration: underline;
     }
     
 }

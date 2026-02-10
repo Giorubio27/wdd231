@@ -1,5 +1,4 @@
-@media (min-width: 32rem) {
-    
+@media only screen and (min-width: 32rem) {
     .bcards {
         display: flex;
         flex-flow: row wrap;
@@ -7,7 +6,7 @@
     }
 
     header {
-        background-color: rgba(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.829);
         margin-bottom: 2rem;
     }
 
@@ -15,7 +14,7 @@
         text-align: center;
         display: grid;
         grid-template-rows: 1fr;
-        background-color: rgba(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.829);
         margin-top: 2rem;
         color: white;
     }
@@ -38,7 +37,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        background-color: rgba(0, 0, 0);
+        background-color: black;
     }
 
     section.naver {
@@ -106,29 +105,33 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    /* join form */
-    .bigman {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    #membercards {
-        display: grid;
+    .items section {
+        grid-template-areas: 
+        "photo photo"
+        "name description"
+        "learnmore learnmore"
+        ;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-content: center;
+        grid-template-columns: 1fr;
         width: 100%;
-        margin: 0;
+        overflow: hidden;
     }
-
-    #membercards section {
-        width: 90%;
-        height: 50%;
-        background-color: lightblue;
+    .items section img {
+        width: 100%;
+        
     }
-
-    form {
+    .items section p {
+        width: 100%;
         margin: 1rem;
     }
+    .items section h3 {
+        margin-left: .5rem;
+    }
+    
+
+
+
+
 
 }
-
