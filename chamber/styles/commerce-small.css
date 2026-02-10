@@ -360,6 +360,8 @@ footer {
     background-color: rgba(0, 0, 0);
     margin-top: 2rem;
     color: white;
+    contain: layout;
+    width: 100%;
 }
 
 footer p {
@@ -367,6 +369,11 @@ footer p {
 }
 footer img {
     width: 50px;
+    height: auto;
+}
+#last_modified {
+    min-height: 1em;
+    display: block;
 }
 
 /* JOIN US CSS */
