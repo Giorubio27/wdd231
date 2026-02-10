@@ -20,7 +20,7 @@ export async function GetItemData() {
 export const displayItemCards = (items) => {
     items.forEach((item) => {
         let itemCard = document.createElement('section');
-        let itemName = document.createElement('h3');
+        let itemName = document.createElement('h2');
         let itemDescription = document.createElement('p');
         let itemImage = document.createElement('img');
         let itemButton = document.createElement('button');
