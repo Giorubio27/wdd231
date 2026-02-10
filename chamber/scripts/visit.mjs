@@ -1,17 +1,25 @@
-export const visitPage = document.querySelector(".visit")
+export const visitPage = document.querySelector(".visits");
 
-export let numVisits = number(window.localStorage.getItem("numVisits - 1s")) || 0;
-let timeBetweenVisits = 
+export const now = Date.now();
 
-numVisits++;
+export const lastVisit = Number(window.localStorage.getItem("lastVisitTimestamp"));
 
- if (numVisits !== 0) {
-    visitPage.textContent = `Number of Visits: ${numVisits}`;
+export const msInDay = 1000 * 60 * 60 * 24;
 
-} else if (numVisits !== 0 && ) {
-    visitPage.textContent = `Welcome to our Page. Let me know if you have any questions!`
- } else {
-     
+if (!lastVisit) {
+    visitPage.textContent = `Welcome to our page. Let us know if you have any questions`;
+} else {
+    const timeDifference = now - lastVisit;
+
+    if (timeDifference < msInDay) {
+        visitPage.textContent = `Back so soon! Awesome!`;
+    } else {
+        const daysPassed = Math.floor(timeDifference / msInDay);
+        const dayText = daysPassed === 1 ? "day" : "days";
+
+            visitPage.textContent = `It has been ${daysPassed} ${dayText} since your last visit`;
+    }
 }
 
-window.localStorage.setItem("numVisits - 1s", numVisits);
+
+window.localStorage.setItem("lastVisitTimestamp", now);

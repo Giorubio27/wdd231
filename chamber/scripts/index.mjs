@@ -4,7 +4,9 @@ import { getWeatherNow } from './weathertoday.mjs';
 import { getEventsData } from './events.mjs';
 import { GetItemData } from './items.mjs';
 import { visitPage } from './visit.mjs';
-import { numVisits } from './visit.mjs';
+import { lastVisit } from './visit.mjs';
+import { msInDay } from './visit.mjs';
+
 
 document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
@@ -16,6 +18,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('primetime');
     navigation.classList.toggle('primetime');
 });
+
 
 
 
