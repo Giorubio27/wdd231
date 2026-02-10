@@ -118,7 +118,8 @@
         overflow: hidden;
     }
     .items section img {
-        width: 100%;        
+        width: 100%;  
+           
     }
     .items section img:hover, .items section img:active {
         border: 2px solid white;

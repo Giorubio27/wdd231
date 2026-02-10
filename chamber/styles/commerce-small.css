@@ -365,6 +365,9 @@ footer {
 footer p {
     padding: .5rem;
 }
+footer img {
+    width: 50px;
+}
 
 /* JOIN US CSS */
 fieldset {
@@ -493,8 +496,12 @@ fieldset {
     border: 1px solid black;
 }
 .items section img {
-    width: 250px;
     grid-area: photo;
+    width: 100%;
+    aspect-ratio: 250 /125;
+    height: auto;
+    
+    object-fit: cover;
 }
 .items section h3 {
     
