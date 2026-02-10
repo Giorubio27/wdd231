@@ -1,10 +1,10 @@
 export const visitPage = document.querySelector(".visits");
 
-export const now = Date.now();
+const now = Date.now();
 
 export const lastVisit = Number(window.localStorage.getItem("lastVisitTimestamp"));
 
-export const msInDay = 1000 * 60 * 60 * 24;
+const msInDay = 1000 * 60 * 60 * 24;
 
 if (!lastVisit) {
     visitPage.textContent = `Welcome to our page. Let us know if you have any questions`;

@@ -5,7 +5,6 @@ import { getEventsData } from './events.mjs';
 import { GetItemData } from './items.mjs';
 import { visitPage } from './visit.mjs';
 import { lastVisit } from './visit.mjs';
-import { msInDay } from './visit.mjs';
 
 
 document.getElementById("last_modified").innerHTML = document.lastModified;
