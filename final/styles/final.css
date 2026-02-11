@@ -23,3 +23,83 @@ main {
     border: 1px solid black;
 }
 
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+
+img {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    color: white;
+
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: none;
+}
+
+ul li a {
+    color: white;
+
+}
+
+#menu::before {
+    content: "≡";
+    color: white;
+
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgb(145, 132, 62);
+
+
+}
+
+li a:active,
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.itstime li {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.itstime ul {
+    background-color: rgb(145, 132, 62);
+    padding-bottom: 1rem;
+}
+
