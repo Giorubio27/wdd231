@@ -29,6 +29,7 @@ export const displayItemCards = (items) => {
         itemDescription.innerHTML = item.description;
         itemImage.setAttribute('src', item.image_url);
         itemImage.setAttribute('alt', item.name);
+        itemImage.setAttribute('loading', 'lazy');
         itemButton.innerHTML = `Learn More`;
         itemButton.addEventListener('click', () => {
             itemModalButton.innerHTML = `
