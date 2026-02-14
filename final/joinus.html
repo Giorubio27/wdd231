@@ -44,6 +44,45 @@
 
     </header>
     <main>
+        <div class="bigman">
+        
+            <form method="get" action="thankyou.html">
+        
+                <fieldset class="flex-city">
+                    <label for="firstname">First Name:</label><input type="text" id="firstname" name="firstname"
+                        title="please enter first name" autocomplete="given-name" required>
+                    <label for="lastname">Last Name:</label><input type="text" id="lastname" name="lastname"
+                        title="please enter last" autocomplete="family-name" required>       
+                    <label for="phone">Phone: </label><input type="tel" id="phone" name="phone"
+                        title="please enter a 10 digit number" autocomplete="tel" required>
+        
+                    <label for="email">Email: </label><input type="email" id="email" name="email" title="enter your email"
+                        autocomplete="email" placeholder="email@example.com" required>
+        
+                </fieldset>
+                <fieldset class="flex-field">
+                    <label for="organization-description">Organization description</label>
+                    <textarea title="Write a description of your business" id="organization-description"
+                        name="organization-description" placeholder="Type about your organization below."></textarea>
+                </fieldset>
+                <fieldset class="member-flex">
+                    <div>Which membership would you like? </div>
+                    <label for="lightweight"><input type="radio" id="lightweight" name="membership" value="lightweight"
+                            required>lightweight</label>
+                    <label for="welterweight"><input type="radio" id="welterweight" name="membership"
+                            value="welterweight">Welterweight</label>
+                    <label for="lightheavyweight"><input type="radio" id="lightheavyweight" name="membership"
+                            value="lightheavyweight">Light Heavyweight</label>
+                    <label for="heavyweight"><input type="radio" id="heavyweight" name="membership"
+                            value="heavyweight">Heavyweight</label>
+                </fieldset>
+                <input type="hidden" id="submit-time" name="submit-time">
+                <button type="submit">Join now</button>
+                <dialog id="fightmember-info">
+                    <div id="modal"></div>
+                    <button id="close-modal">Close</button>
+                </dialog>
+
 
     </main>
     <footer>

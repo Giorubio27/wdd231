@@ -103,3 +103,78 @@ li a:hover {
     padding-bottom: 1rem;
 }
 
+.fighters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.fighters section {
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+    "photo"
+    "name"
+    "record"
+    ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.007);
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    padding-bottom: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.fighters img {
+    grid-area: photo;
+    width: fit-content;
+    border: 1px solid gold;
+    box-shadow: 0 0 20px gold;
+    
+
+}
+
+#name {
+    grid-area: name;
+    margin: 0;
+    color: white;
+    
+}
+#dob {
+    grid-area: dob;
+    margin: 0;
+    display: none;
+}
+#style {
+    grid-area: styles;
+    margin: 0;
+    display: none;
+}
+#birth {
+    grid-area: birth;
+    margin: 0;
+    display: none;
+}
+#record {
+    grid-area: record;
+    margin: 0;
+    color: white;
+
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+fieldset {
+    display: flex;
+    flex-flow: column;
+}
+

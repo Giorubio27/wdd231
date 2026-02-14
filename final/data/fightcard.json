@@ -1,0 +1,94 @@
+{
+    "ufc_schedule": [
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-02-21",
+            "venue": "Toyota Center",
+            "address": "Houston, TX, USA",
+            "main_card_time_et": "8:00 PM",
+            "main_event": "Sean Strickland vs. Anthony Hernandez",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-06/060124-strickland-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-02-28",
+            "venue": "Arena CDMX",
+            "address": "Mexico City, Mexico",
+            "main_card_time_et": "8:00 PM",
+            "main_event": "Brandon Moreno vs. Lone'er Kavanagh",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-02/022424-moreno-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC 326",
+            "date": "2026-03-07",
+            "venue": "T-Mobile Arena",
+            "address": "Las Vegas, NV, USA",
+            "main_card_time_et": "10:00 PM",
+            "main_event": "Max Holloway vs. Charles Oliveira 2",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-04/041324-holloway-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-03-14",
+            "venue": "UFC Apex",
+            "address": "Las Vegas, NV, USA",
+            "main_card_time_et": "7:00 PM",
+            "main_event": "Josh Emmett vs. Kevin Vallejos",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2023-12/121623-emmett-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-03-21",
+            "venue": "The O2 Arena",
+            "address": "London, UK",
+            "main_card_time_et": "4:00 PM",
+            "main_event": "Movsar Evloev vs. Lerone Murphy",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-01/012024-evloev-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-03-28",
+            "venue": "Climate Pledge Arena",
+            "address": "Seattle, WA, USA",
+            "main_card_time_et": "8:00 PM",
+            "main_event": "Israel Adesanya vs. Joe Pyfer",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-08/081724-adesanya-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-04-04",
+            "venue": "UFC Apex",
+            "address": "Las Vegas, NV, USA",
+            "main_card_time_et": "7:00 PM",
+            "main_event": "TBD",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/2020-06/UFC_FightNight_Apex_Logo.png"
+        },
+        {
+            "event_name": "UFC 327",
+            "date": "2026-04-11",
+            "venue": "Kaseya Center",
+            "address": "Miami, FL, USA",
+            "main_card_time_et": "10:00 PM",
+            "main_event": "Joshua Van vs. Tatsuro Taira",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-06/061524-taira-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-04-18",
+            "venue": "Canadian Tire Centre",
+            "address": "Ottawa, ON, Canada",
+            "main_card_time_et": "7:00 PM",
+            "main_event": "Jasmine Jasudavicius vs. Karine Silva",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/styles/event_results_athlete_image/s3/2024-11/110224-jasudavicius-hero-1920x1080.jpg"
+        },
+        {
+            "event_name": "UFC Fight Night",
+            "date": "2026-05-30",
+            "venue": "Galaxy Arena",
+            "address": "Macau, China",
+            "main_card_time_et": "6:00 AM",
+            "main_event": "TBD",
+            "image_url": "https://dmxg5wxfqgb4u.cloudfront.net/2020-02/UFC_Macau_Logo.png"
+        }
+    ]
+}

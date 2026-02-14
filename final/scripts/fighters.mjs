@@ -20,11 +20,16 @@ export const DisplayFighterCards = (fighters) => {
         let fighterPhoto = document.createElement('img');
 
         name.innerHTML = fighter.name;
+        name.setAttribute('id', 'name')
         dob.innerHTML = fighter.dob;
+        dob.setAttribute('id', 'dob')
         style.innerHTML = fighter.style;
+        style.setAttribute('id', 'style')
         birthplace.innerHTML = fighter.birthplace;
-        record.innerHTML = fighter.record;
-        fighterPhoto.setAttribute('src', fighter.image)
+        birthplace.setAttribute('id', 'birth')
+        record.innerHTML = `Record: ${fighter.record}`;
+        record.setAttribute('id', 'record');
+        fighterPhoto.setAttribute('src', fighter.image);
 
         fighterCard.appendChild(name);
         fighterCard.appendChild(fighterPhoto);
