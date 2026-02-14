@@ -91,10 +91,12 @@ li a:hover {
 
 }
 
-.primetime ul {
+.hammer.primetime ul {
     background-color: rgb(145, 132, 62);
     padding-bottom: 1rem;
+    display: block;
 }
+
 
 /* Grid button layout */
 h1 {

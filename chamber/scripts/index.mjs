@@ -7,16 +7,22 @@ import { visitPage } from './visit.mjs';
 import { lastVisit } from './visit.mjs';
 
 
-document.getElementById("last_modified").innerHTML = document.lastModified;
-document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-document.getElementById("submit-time").value = new Date().toISOString();
+document.getElementById('last_modified').innerHTML = document.lastModified;
+document.getElementById('currentyear').innerHTML = new Date().getFullYear();
+const submitTime = document.getElementById("submit-time");
+if (submitTime) {
+    submitTime.value = new Date().toISOString();
+}
 const hambutton = document.querySelector('#menu');
 const navigation = document.querySelector('.hammer');
+if (hambutton && navigation) {
 
-hambutton.addEventListener('click', () => {
-    hambutton.classList.toggle('primetime');
-    navigation.classList.toggle('primetime');
-});
+    hambutton.addEventListener('click', () => {
+        hambutton.classList.toggle('primetime');
+        navigation.classList.toggle('primetime');
+    });
+}
+
 
 
 
