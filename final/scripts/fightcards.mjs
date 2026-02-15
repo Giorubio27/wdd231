@@ -19,9 +19,10 @@ export const DisplayFightCards = (fightcards) => {
         let image = document.createElement('img');
 
         name.innerHTML = `${fightcard.event_name}: ${fightcard.main_event}`;
-        date.innerHTML = fightcard.date;
-        address.innerHTML = fightcard.address;
+        date.innerHTML = `${fightcard.date}`;
+        address.innerHTML = `Address: ${fightcard.address}`;
         time.innerHTML = fightcard.main_card_time_et;
+        eventCard.setAttribute('id', 'cardevent');
 
 
         eventCard.appendChild(name);

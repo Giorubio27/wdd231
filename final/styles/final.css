@@ -8,9 +8,13 @@
     color: white;
 }
  footer {
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     width: 100%;
-    height: 100px;
+    height: auto;
+    background-color: gold;
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
     
 }
 footer a  {
@@ -18,7 +22,7 @@ footer a  {
     margin-left: 1rem;
 }
 main {
-    background-color: gold;
+    
     margin: 1rem;
     border: 1px solid black;
 }
@@ -176,5 +180,91 @@ form {
 fieldset {
     display: flex;
     flex-flow: column;
+}
+
+/* Index mobile css */
+
+.gridman {
+    display: grid;
+    width: 100%;
+    gap: 25px;
+    background-color: white;
+    place-items: center;
+
+
+}
+.gridman article {
+    margin: 1rem;
+}
+.gridman article img {
+    width: 100%;
+}
+    
+.top-dog {
+    display: grid;
+}
+.label {
+    text-decoration: underline;
+    
+}
+
+
+.top-dog section {
+    background-color: gold;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photo"
+    "record"
+    "rank";
+    box-shadow: 0 0 20px black;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    place-items: center;
+    width: 100%;
+    max-width: 350px;
+    min-height: 300px;
+    padding-bottom: 1rem;
+    border: 1px solid black;
+
+}
+#fighterphoto  {
+    grid-area: photo;
+    width: 250px;
+    
+}
+#bestname  {
+    grid-area: name;
+    
+    
+}
+#fighterrecord  {
+    grid-area: rank;
+    margin: 0;
+    
+}
+#bestrecord  {
+    grid-area: record;
+    margin-bottom: 0;
+}
+#fight-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    background-color: white;
+}
+#fightcard section {
+    margin: 1rem;
+    border: 1px solid black;
+
+}
+#cardevent {
+    border: 1px solid black;
+    width: 100%;
+    margin: 1rem;
+    background-color: rgb(233, 233, 233);
 }
 

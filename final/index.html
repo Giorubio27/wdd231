@@ -9,7 +9,8 @@
     <meta name="description" content="This is a fan made UFC page for my final project for WDD231">
     <link rel="stylesheet" href="styles/final.css" media="print" onload="this.media='all'">
     <link rel="icon" href="images/myfav.ico">
-    <script type="module" src="scripts/fighters.mjs"></script>
+    <script type="module" src="scripts/fighters.mjs" defer></script>
+    <script type="module" src="scripts/bestfighters.mjs" defer></script>
     <script type="module" src="scripts/fightcards.mjs"></script>
     <script type="module" src="scripts/club.mjs"></script>
     <script type="module" src="scripts/final.mjs"></script>
@@ -44,9 +45,61 @@
 
     </header>
     <main>
+        <div class="gridman">
+            <section>
+                <article>
+                    <img src="images/octagonhero.webp" alt="heroimage">
+                </article>
+
+            </section>
+            <section class="label">
+                <h2>Our Top Fighters</h2>
+
+            </section>
+            <section class="top-dog">
+                
+
+            </section>
+        </div>
+        <div class="events-container">
+            <div id="fight-card">
+
+            </div>
+
+        </div>
 
     </main>
     <footer>
+        <div>
+            <h2>The Octagon</h2>
+            <p>7242 Morrison Street,
+                Las Vegas, Nevada 89148,
+                (702) 867-5309
+            </p>
+            <p class="visits">Number of Visits:</p>
+        </div>
+        <div>
+            <nav class="ducks">
+                <a href="facebook.com">
+                    <img src="images/facebook.webp" alt="facebook" loading="lazy" width="50">
+                </a>
+                <a href="instagram.com">
+                    <img src="images/instagram-icon.webp" alt="instagram" loading="lazy" width="50">
+                </a>
+                <a href="github.com">
+                    <img src="images/github_icon.webp" alt="github" loading="lazy" width="50">
+                </a>
+            </nav>
+        </div>
+        <div>
+            <span>WDD231 Class Project</span>
+            <!--  -->
+            <p>Giovanni Rubio</p>
+            <p>©️<span id="currentyear"></span> The Octagon</p>
+            <p id="last_modified">"Last modified"</p>
+        
+        </div>
+
 
     </footer>
 </body>

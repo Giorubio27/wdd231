@@ -2,6 +2,10 @@ import { GetFighterData } from "./fighters.mjs";
 import { DisplayFighterCards } from "./fighters.mjs";
 import { fighterCards } from "./fighters.mjs";
 import { fightCards } from "./fightcards.mjs";
+import { DisplayBestFighters, GetBestFighters } from "./bestfighters.mjs";
+import { bestFightersCards } from "./bestfighters.mjs";
+
+
 
 // document.getElementById("last_modified").innerHTML = document.lastModified;
 // document.getElementById("currentyear").innerHTML = new Date().getFullYear();
