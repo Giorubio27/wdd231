@@ -1,0 +1,87 @@
+@media only screen and (min-width: 32rem) {
+    
+
+    header {
+        background-color: rgba(0, 0, 0, 0.829);
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        text-align: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        background-color: rgba(0, 0, 0, 0.829);
+        margin-top: 2rem;
+        color: white;
+    }
+
+    footer p {
+        padding: .5rem;
+    }
+
+    footer img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    footer h2 {
+        margin-top: .5rem;
+    }
+
+    /* Home-large Layout */
+    
+    .gridman {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+    .top-dog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 50px;
+        place-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        
+        
+
+    }
+    .label {
+        text-align: center;
+    }
+    .events-container {
+        grid-template-columns: 1fr;
+        
+        
+    }
+    #fight-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        gap: 20px;
+        padding: 20px;
+        
+        
+    }
+    #fight-card > section {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    #title-event {
+        text-align: center;
+        font-size: xx-large;
+        background-color: gold;
+        margin: 1rem;
+        padding: 15px;
+        border: 1px solid black;
+    }
+    }

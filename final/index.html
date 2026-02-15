@@ -7,10 +7,13 @@
     <title>Home | The Octagon</title>
     <meta name="author" content="Giovanni Rubio">
     <meta name="description" content="This is a fan made UFC page for my final project for WDD231">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final-small.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/final-medium.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/final.css" media="print" onload="this.media='all'">
     <link rel="icon" href="images/myfav.ico">
-    <script type="module" src="scripts/fighters.mjs" defer></script>
-    <script type="module" src="scripts/bestfighters.mjs" defer></script>
+    <script type="module" src="scripts/fighters.mjs"></script>
+    <script type="module" src="scripts/bestfighters.mjs"></script>
     <script type="module" src="scripts/fightcards.mjs"></script>
     <script type="module" src="scripts/club.mjs"></script>
     <script type="module" src="scripts/final.mjs"></script>
@@ -52,16 +55,20 @@
                 </article>
 
             </section>
-            <section class="label">
-                <h2>Our Top Fighters</h2>
+            <div>
+                <section class="label">
+                    <h2>Our Top Fighters</h2>
 
-            </section>
-            <section class="top-dog">
-                
+                </section>
+                <section class="top-dog">
+                    
 
-            </section>
+                </section>
+            </div>
         </div>
+        <div id="title-event">Future Events</div>
         <div class="events-container">
+            
             <div id="fight-card">
 
             </div>
