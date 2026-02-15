@@ -1,4 +1,8 @@
 export const fighterCards = document.querySelector('.fighters')
+document.addEventListener('DOMContentLoaded', () => {
+   
+    GetFighterData();
+});
 
 export async function GetFighterData() {
     const response = await fetch('data/fighters.json');

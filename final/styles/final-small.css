@@ -305,3 +305,12 @@ fieldset {
     padding: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+#title-event {
+    text-align: center;
+    font-size: xx-large;
+    background-color: gold;
+    margin: 1rem;
+    padding: 15px;
+    border: 1px solid black;
+}

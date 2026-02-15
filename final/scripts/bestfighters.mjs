@@ -1,4 +1,8 @@
 export const bestFightersCards = document.querySelector('.top-dog');
+document.addEventListener('DOMContentLoaded', () => {
+   
+    GetBestFighters();
+});
 
 export async function GetBestFighters() {
     
