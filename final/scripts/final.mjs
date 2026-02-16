@@ -7,8 +7,8 @@ import { bestFightersCards } from "./bestfighters.mjs";
 
 
 
-// document.getElementById("last_modified").innerHTML = document.lastModified;
-// document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+document.getElementById("last_modified").innerHTML = document.lastModified;
+document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 // document.getElementById("submit-time").value = new Date().toISOString();
 const hambutton = document.querySelector('#menu');
 const navigation = document.querySelector('.hammerfist');

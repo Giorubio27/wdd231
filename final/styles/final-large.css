@@ -1,4 +1,22 @@
 @media only screen and (min-width: 62rem) {
+    .gridman {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    article img {
+        position: relative;
+    }
+    
+    .top-dog {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #fight-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
     
 
 }

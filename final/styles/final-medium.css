@@ -32,9 +32,10 @@
     
     .gridman {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        
+         
+    }
+    article img  {
+        display: none;
     }
     .top-dog {
         display: grid;
@@ -45,6 +46,7 @@
         width: 100%;
         padding: 1rem;
         grid-template-columns: 1fr 1fr;
+        background-image: url('../images/octagonhero.webp');
         
         
 

@@ -225,6 +225,7 @@ fieldset {
 
 .label {
     text-decoration: underline;
+    text-align: center;
 
 }
 
@@ -302,8 +303,7 @@ fieldset {
     place-items: center;
     text-align: center;
     width: 100%;
-    padding: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 #title-event {
@@ -312,5 +312,14 @@ fieldset {
     background-color: gold;
     margin: 1rem;
     padding: 15px;
+    border: 1px solid black;
+}
+#fight-card>section {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     border: 1px solid black;
 }
