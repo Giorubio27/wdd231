@@ -44,8 +44,10 @@ export const DisplayBestFighters = (bestFighters) => {
         fighterRank.innerHTML = `Rank: ${fighter.rank}`;
         fighterRank.setAttribute('id', 'fighterrank')
         fighterPhoto.setAttribute('src', fighter.image);
-        fighterPhoto.setAttribute('loading', 'lazy');
-        fighterPhoto.setAttribute('alt', 'fighter');
+        fighterPhoto.setAttribute('fetchpriority', 'high');
+        fighterPhoto.setAttribute('alt', fighter.name);
+        fighterPhoto.setAttribute('width', '250')
+        fighterPhoto.setAttribute('height', '167')
         fighterPhoto.setAttribute('id', 'fighterphoto');
 
         bestFighterCard.appendChild(fighterName);

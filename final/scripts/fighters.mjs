@@ -14,25 +14,30 @@ export async function GetFighterData() {
 }
 
 export const DisplayFighterCards = (fighters) => {
+    fighterCards.innerHTML = '';
+    
     fighters.forEach((fighter) => {
         let fighterCard = document.createElement('section');
         let name = document.createElement('h2');
+        name.className = 'fighter-name';
         let dob = document.createElement('p');
+        dob.className = 'dob'
         let style = document.createElement('p');
+        style.className = 'style'
         let birthplace = document.createElement('p');
+        birthplace.className = 'birthplace'
         let record = document.createElement('p');
+        record.className = 'record';
         let fighterPhoto = document.createElement('img');
+        fighterPhoto.className = 'fighterphoto';
 
         name.innerHTML = fighter.name;
-        name.setAttribute('id', 'name')
+        
         dob.innerHTML = fighter.dob;
-        dob.setAttribute('id', 'dob')
         style.innerHTML = fighter.style;
         style.setAttribute('id', 'style')
         birthplace.innerHTML = fighter.birthplace;
-        birthplace.setAttribute('id', 'birth')
         record.innerHTML = `Record: ${fighter.record}`;
-        record.setAttribute('id', 'record');
         fighterPhoto.setAttribute('src', fighter.image);
         fighterPhoto.setAttribute('fetchpriority', 'high');
         fighterPhoto.setAttribute('width', '250');
@@ -50,4 +55,3 @@ export const DisplayFighterCards = (fighters) => {
         fighterCards.appendChild(fighterCard);
     })
 }
-GetFighterData();

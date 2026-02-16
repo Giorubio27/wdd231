@@ -57,7 +57,37 @@
     
     .top-dog {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 2rem;
+        background-image: url('../images/octagonhero.webp');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .top-dog section {
+        min-height: 380px;
+        background-color: gold;
+        display: grid;
+        grid-template-areas: 
+        "name"
+        "photo"
+        "record"
+        "rank";
+        place-items: center;
+        width: 100%;
+        min-height: 380px;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        box-shadow: 10px 10px 20px rgb(0,0,0,0.5);
+        border: 1px solid black;
+    }
+    #fighterphoto {
+        width: 250px;
+        grid-area: photo;
+        height: 167px;
+        object-fit: cover;
+        border: 1px solid black;
     }
     #fight-card {
         display: grid;
