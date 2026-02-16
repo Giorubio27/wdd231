@@ -1,60 +1,61 @@
 @media only screen and (min-width: 62rem) {
     .bigtime {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            background-color: black;
-        }
-    
-        section.navy {
-            display: flex;
-            justify-content: space-around;
-    
-        }
-    
-        section.navy a {
-            display: flex;
-            justify-content: space-around;
-            padding-right: 2rem;
-            padding-left: 2rem;
-            padding-bottom: 1rem;
-            padding-top: 1rem;
-        }
-    
-        section.navy a:hover,
-        section.navy:active {
-            color: black;
-            background-color: white;
-        }
-    
-        ul li {
-            display: contents;
-    
-    
-        }
-    
-        ul {
-            display: flex;
-    
-    
-    
-    
-        }
-    
-        #menu {
-            display: none;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        background-color: black;
+    }
+
+    section.navy {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    section.navy a {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    section.navy a:hover,
+    section.navy:active {
+        color: black;
+        background-color: white;
+    }
+
+    ul li {
+        display: contents;
+
+
+    }
+
+    ul {
+        display: flex;
+
+
+
+
+    }
+
+    #menu {
+        display: none;
+    }
 
 
     .gridman {
         display: grid;
         grid-template-columns: 1fr;
-        
+
     }
+
     article img {
         position: relative;
     }
-    
+
     .top-dog {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -63,25 +64,27 @@
         background-image: url('../images/octagonhero.webp');
         background-size: cover;
         background-position: center;
-        
+
     }
+
     .top-dog section {
         min-height: 380px;
         background-color: gold;
         display: grid;
-        grid-template-areas: 
-        "name"
-        "photo"
-        "record"
-        "rank";
+        grid-template-areas:
+            "name"
+            "photo"
+            "record"
+            "rank";
         place-items: center;
         width: 100%;
         min-height: 380px;
         grid-template-columns: 1fr;
         padding: 1rem;
-        box-shadow: 10px 10px 20px rgb(0,0,0,0.5);
+        box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
         border: 1px solid black;
     }
+
     #fighterphoto {
         width: 250px;
         grid-area: photo;
@@ -89,11 +92,12 @@
         object-fit: cover;
         border: 1px solid black;
     }
+
     #fight-card {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    
-    
+
+
 
 }
