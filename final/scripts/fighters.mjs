@@ -34,6 +34,10 @@ export const DisplayFighterCards = (fighters) => {
         record.innerHTML = `Record: ${fighter.record}`;
         record.setAttribute('id', 'record');
         fighterPhoto.setAttribute('src', fighter.image);
+        fighterPhoto.setAttribute('fetchpriority', 'high');
+        fighterPhoto.setAttribute('width', '250');
+        fighterPhoto.setAttribute('height', '167');
+        fighterPhoto.setAttribute('alt', fighter.name);
 
         fighterCard.appendChild(name);
         fighterCard.appendChild(fighterPhoto);
