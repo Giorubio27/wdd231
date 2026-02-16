@@ -42,6 +42,7 @@ footer h2 {
 header {
     display: grid;
     grid-template-rows: 1fr;
+    box-shadow: 0 0 20px gold;
 
 }
 
@@ -52,10 +53,16 @@ img {
 .header {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: end;
     background-color: rgba(0, 0, 0);
     color: white;
+    
 
+}
+.header span {
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    font-size: larger;
 }
 
 .header img {
