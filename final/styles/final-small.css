@@ -42,7 +42,7 @@ footer h2 {
 header {
     display: grid;
     grid-template-rows: 1fr;
-    box-shadow: 0 0 20px gold;
+    
 
 }
 
@@ -155,41 +155,42 @@ li a:hover {
     margin: 1rem;
 }
 
-.fighters img {
+.fighterphoto {
     grid-area: photo;
     aspect-ratio: 250 / 167;
     border: 1px solid gold;
     box-shadow: 0 0 20px gold;
+    width: 90%;
 
 
 }
 
-#name {
+.fighter-name {
     grid-area: name;
     margin: 0;
     color: white;
 
 }
 
-#dob {
+.dob {
     grid-area: dob;
     margin: 0;
     display: none;
 }
 
-#style {
+.style {
     grid-area: styles;
     margin: 0;
     display: none;
 }
 
-#birth {
+.birthplace {
     grid-area: birth;
     margin: 0;
     display: none;
 }
 
-#record {
+.record {
     grid-area: record;
     margin: 0;
     color: white;
