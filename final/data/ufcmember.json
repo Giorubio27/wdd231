@@ -1,0 +1,41 @@
+
+{
+    "memberships": [
+        {
+            "name": "Contender",
+            "member_id": "UFC-BASE-001",
+            "price": 14.99,
+            "colortheme": "#CD7F32",
+            "benefits": [
+                "Early ticket access",
+                "10% merch discount",
+                "Digital fight program"
+            ]
+        },
+        {
+            "name": "Champion",
+            "member_id": "UFC-PREM-002",
+            "price": 29.99,
+            "colortheme": "#C0C0C0",
+            "benefits": [
+                "PPV pre-sale access",
+                "20% merch discount",
+                "Ad-free fight replays",
+                "Exclusive weigh-in access"
+            ]
+        },
+        {
+            "name": "Legend",
+            "member_id": "UFC-ELITE-003",
+            "price": 59.99,
+            "colortheme": "#D4AF37",
+            "benefits": [
+                "VIP lounge access",
+                "35% merch discount",
+                "Signed event posters",
+                "Post-fight presser access",
+                "Quarterly fighter meet-and-greet"
+            ]
+        }
+    ]
+}
