@@ -38,6 +38,7 @@ export const displayMemberships = (memberships) => {
             <p>Price: ${membership.cost}</P>`;
             dialogue.showModal();
         });
+        
 
         card.appendChild(name);
         card.appendChild(button);
