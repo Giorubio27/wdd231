@@ -41,7 +41,7 @@ export const DisplayFightCards = (fightcards) => {
         <h2>${fightcard.event_name}</h2>
         <p>Venue: ${fightcard.venue}</p>
         <p>MainEvent: ${fightcard.main_event}</p>
-        <img src="${fightcard.image_url}" alt="fightcard width="300" height="200">
+        <img src="${fightcard.image_url}" alt="fightcard" width="300" height="200">
         `;
         fightCardDialogue.showModal();
         });
