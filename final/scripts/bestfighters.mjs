@@ -1,7 +1,17 @@
+const fighterDialogue = document.querySelector('#fighter-info');
+const fighterModalButton = document.querySelector('#fighter-modal');
+const fighterCloseModal = document.querySelector('#close-fighter-modal');
+
+
+
 export const bestFightersCards = document.querySelector('.top-dog');
 document.addEventListener('DOMContentLoaded', () => {
    
     GetBestFighters();
+});
+
+fighterCloseModal.addEventListener('click', () => {
+    fighterDialogue.close();
 });
 
 export async function GetBestFighters() {
@@ -36,6 +46,7 @@ export const DisplayBestFighters = (bestFighters) => {
         let fighterRecord = document.createElement('p');
         let fighterRank = document.createElement('p');
         let fighterPhoto = document.createElement('img');
+        let fighterButton = document.createElement('button');
 
         fighterName.innerHTML = fighter.name;
         fighterName.setAttribute('id', 'bestname');
@@ -49,11 +60,25 @@ export const DisplayBestFighters = (bestFighters) => {
         fighterPhoto.setAttribute('width', '250')
         fighterPhoto.setAttribute('height', '167')
         fighterPhoto.setAttribute('id', 'fighterphoto');
+        fighterButton.innerHTML = `Learn More`;
+        fighterButton.addEventListener('click', () => {
+            fighterModalButton.innerHTML = `
+            <h2>${fighter.name}</h2>
+            <p>Style: ${fighter.style}</p>
+            <p>DOB: ${fighter.dob}</p>
+            <p>BirthPlace: ${fighter.birthplace}</p>
+            <p>Rank: ${fighter.rank}</p>
+            <p>Record: ${fighter.record}</p>`;
+            fighterDialogue.showModal();
+        });
 
         bestFighterCard.appendChild(fighterName);
         bestFighterCard.appendChild(fighterRecord);
         bestFighterCard.appendChild(fighterRank);
         bestFighterCard.appendChild(fighterPhoto);
+        bestFighterCard.appendChild(fighterButton);
+        
+            
 
         bestFightersCards.appendChild(bestFighterCard);
 
