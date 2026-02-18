@@ -29,7 +29,7 @@ export async function GetBestFighters() {
 
 
 
-        const topFive = allFighters.filter(fighter => fighter.rank < 5);
+        const topFive = allFighters.filter(fighter => fighter.rank < 10);
 
         DisplayBestFighters(topFive);
         
