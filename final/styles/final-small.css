@@ -234,6 +234,7 @@ fieldset {
     height: auto;
     aspect-ratio: 1200 / 675;
     display: block;
+    object-fit: cover;
 }
 
 .top-dog {

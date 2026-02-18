@@ -66,6 +66,7 @@
         background-image: url('../images/octagonhero.webp');
         background-size: cover;
         background-position: center;
+        min-height: 400px;
 
     }
 
@@ -98,6 +99,7 @@
     #fight-card {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        min-height: 500px;
     }
 
 
