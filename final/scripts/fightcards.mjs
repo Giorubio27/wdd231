@@ -12,20 +12,12 @@ fightCardCloseModal.addEventListener('click', () => {
 });
 
 export async function GetFightCards() {
-    try {
-        
-        const response = await fetch('data/fightcard.json');
-        if (!response.ok) {
-            throw new error(`HTTP error status: ${response.status}`);
-        }
-        const fightCardData = await response.json();
+    const response = await fetch('data/fightcard.json');
+    const fightCardData = await response.json();
 
-        const allFightCards = fightCardData.ufc_schedule;
+    const allFightCards = fightCardData.ufc_schedule;
 
-        DisplayFightCards(allFightCards);
-    } catch (error) {
-        console.error('Failed to load fightcard data', error);
-    }
+    DisplayFightCards(allFightCards);
 }
 
 

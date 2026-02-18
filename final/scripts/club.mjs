@@ -13,19 +13,13 @@ memberCloseModal.addEventListener('click', () => {
 });
 
 export async function GetMemberInfo() {
-    try {
-        const response = await fetch('data/ufcmember.json');
-        if (!response.ok) {
-            throw new error(`HTTP error! status: ${response.status}`);
-        }
-        const memberInfoData = await response.json();
+    
+    const response = await fetch('data/ufcmember.json');
+    const memberInfoData = await response.json();
 
-        const allInfo = memberInfoData.memberships;
+    const allInfo = memberInfoData.memberships;
 
-        DisplayMemberInfo(allInfo);
-    } catch (error) {
-        console.error('Failed to load member data', error)
-    }
+    DisplayMemberInfo(allInfo);
 }
 
 const DisplayMemberInfo = (memberships) => {
