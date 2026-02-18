@@ -329,7 +329,9 @@ fieldset {
     width: 100%;
     
 }
-
+footer a {
+    color: white;
+}
 #title-event {
     text-align: center;
     font-size: xx-large;

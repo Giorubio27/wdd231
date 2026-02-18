@@ -5,12 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 export async function GetFighterData() {
-    const response = await fetch('data/fighters.json');
-    const fighterData = await response.json();
+    try {
+        const response = await fetch('data/fighters.json');
+        if (!response.ok) {
+            throw new error(`HTTP error! status: ${response.status}`);
+        }
+        const fighterData = await response.json();
 
-    const allFighters = fighterData.top_fighters;
+        const allFighters = fighterData.top_fighters;
 
-    DisplayFighterCards(allFighters);
+        DisplayFighterCards(allFighters);
+    } catch (error) {
+        console.error('Failed to load fighterdata:', error);
+    }
 }
 
 export const DisplayFighterCards = (fighters) => {
