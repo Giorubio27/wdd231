@@ -2,7 +2,7 @@
 {
     "memberships": [
         {
-            "name": "Contender",
+            "name": "Welterweight",
             "member_id": "UFC-BASE-001",
             "price": 14.99,
             "colortheme": "#CD7F32",
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "name": "Champion",
+            "name": "Light Heavyweight",
             "member_id": "UFC-PREM-002",
             "price": 29.99,
             "colortheme": "#C0C0C0",
@@ -25,7 +25,7 @@
             ]
         },
         {
-            "name": "Legend",
+            "name": "Heavyweight",
             "member_id": "UFC-ELITE-003",
             "price": 59.99,
             "colortheme": "#D4AF37",
